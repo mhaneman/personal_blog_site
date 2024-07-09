@@ -267,21 +267,21 @@ Suppose an infinitly large chessboard with a point of origin, labled with the nu
 <p>To Generate the spiral, we will keep track of a 2d vector that rotates 90 degrees after it has moved m squares.
 The number of squares the vector will move will be m+1 after 2 rotations.
 Technically, we could need an infinite number of values squares to run this simulation. But, we will artifically cap the size of the sprial at <code>spiral_size</code>.</p>
-<pre tabindex="0"><code>def gen_spiral(self, spiral_size, negate_primes):
-        square_length = 1
-        dir = [0, 1]
-        current_square = [0, 0]
-        current_value = 0
-
-        for _ in range(0, spiral_size):
-            for _ in range(0, 2):
-                for _ in range(0, square_length):
-                    self.coord_vals[tuple(current_square)] = current_value
-                    current_square = [sum(i) for i in zip(current_square, dir)]
-                    current_value += 1
-                dir = self.rot_vec2_90(dir)
-            square_length += 1
-</code></pre><h2 id="moving-the-knight-and-checking-visited-squares">
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff7b72">def</span> <span style="color:#d2a8ff;font-weight:bold">gen_spiral</span>(self, spiral_size, negate_primes):
+</span></span><span style="display:flex;"><span>        square_length <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#a5d6ff">1</span>
+</span></span><span style="display:flex;"><span>        dir <span style="color:#ff7b72;font-weight:bold">=</span> [<span style="color:#a5d6ff">0</span>, <span style="color:#a5d6ff">1</span>]
+</span></span><span style="display:flex;"><span>        current_square <span style="color:#ff7b72;font-weight:bold">=</span> [<span style="color:#a5d6ff">0</span>, <span style="color:#a5d6ff">0</span>]
+</span></span><span style="display:flex;"><span>        current_value <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#a5d6ff">0</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ff7b72">for</span> _ <span style="color:#ff7b72;font-weight:bold">in</span> range(<span style="color:#a5d6ff">0</span>, spiral_size):
+</span></span><span style="display:flex;"><span>            <span style="color:#ff7b72">for</span> _ <span style="color:#ff7b72;font-weight:bold">in</span> range(<span style="color:#a5d6ff">0</span>, <span style="color:#a5d6ff">2</span>):
+</span></span><span style="display:flex;"><span>                <span style="color:#ff7b72">for</span> _ <span style="color:#ff7b72;font-weight:bold">in</span> range(<span style="color:#a5d6ff">0</span>, square_length):
+</span></span><span style="display:flex;"><span>                    self<span style="color:#ff7b72;font-weight:bold">.</span>coord_vals[tuple(current_square)] <span style="color:#ff7b72;font-weight:bold">=</span> current_value
+</span></span><span style="display:flex;"><span>                    current_square <span style="color:#ff7b72;font-weight:bold">=</span> [sum(i) <span style="color:#ff7b72">for</span> i <span style="color:#ff7b72;font-weight:bold">in</span> zip(current_square, dir)]
+</span></span><span style="display:flex;"><span>                    current_value <span style="color:#ff7b72;font-weight:bold">+=</span> <span style="color:#a5d6ff">1</span>
+</span></span><span style="display:flex;"><span>                dir <span style="color:#ff7b72;font-weight:bold">=</span> self<span style="color:#ff7b72;font-weight:bold">.</span>rot_vec2_90(dir)
+</span></span><span style="display:flex;"><span>            square_length <span style="color:#ff7b72;font-weight:bold">+=</span> <span style="color:#a5d6ff">1</span>
+</span></span></code></pre></div><h2 id="moving-the-knight-and-checking-visited-squares">
   Moving the knight and checking visited squares
   <a class="heading-link" href="#moving-the-knight-and-checking-visited-squares">
     <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
@@ -289,58 +289,57 @@ Technically, we could need an infinite number of values squares to run this simu
   </a>
 </h2>
 <p>We will have a base class called Knight. But why? Why not just implement everything in the knight class? In the future, we may want to create new rules to apply to the knight. So, for each implementation of these rules, the Knight class will be inherited and the abstract method <code>find_next_square</code> will be implemented. In this way, each implementation is organized in each class and we will not have to duplicate the basic code for the knight.</p>
-<pre tabindex="0"><code>class Knight:
-
-    def __init__(self, start_pos: tuple = (0,0)) -&gt; None:
-        self.curr_pos = start_pos
-        self.move_offsets = [(1, 2), (-1, 2), (1, -2), (-1, -2), (2, 1), (-2, 1), (2, -1), (-2, -1)]
-        self.pos_history = []
-</code></pre><p>Lets implement the rules for finding the next square in a class called <code>NKnight</code>. Its called NKnight because n represents the nth lowest value the knight will go to. For example, if n=0 and we have the possible square values <code>[2, 9, 5]</code>, the knight will go to the square wil value 2. For n=1, the knight will go to the square with value 5. n=3, square with value 9. n=4, since there are only three options, we must take the square with value 9.</p>
-<pre tabindex="0"><code>class NKnight(Knight):
-    def __init__(self, n=0, start_pos: tuple = (0,0)) -&gt; None:
-        Knight.__init__(self, start_pos)
-        self.n = n
-
-    def find_next_square(self, coord_vals: Dict[tuple, int])-&gt; Optional[tuple]:
-    ...
-</code></pre><p>First, lets collect all the possible squares the knight can go to.</p>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff7b72">class</span> <span style="color:#f0883e;font-weight:bold">Knight</span>:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">def</span> __init__(self, start_pos: tuple <span style="color:#ff7b72;font-weight:bold">=</span> (<span style="color:#a5d6ff">0</span>,<span style="color:#a5d6ff">0</span>)) <span style="color:#ff7b72;font-weight:bold">-&gt;</span> <span style="color:#79c0ff">None</span>:
+</span></span><span style="display:flex;"><span>        self<span style="color:#ff7b72;font-weight:bold">.</span>curr_pos <span style="color:#ff7b72;font-weight:bold">=</span> start_pos
+</span></span><span style="display:flex;"><span>        self<span style="color:#ff7b72;font-weight:bold">.</span>move_offsets <span style="color:#ff7b72;font-weight:bold">=</span> [(<span style="color:#a5d6ff">1</span>, <span style="color:#a5d6ff">2</span>), (<span style="color:#ff7b72;font-weight:bold">-</span><span style="color:#a5d6ff">1</span>, <span style="color:#a5d6ff">2</span>), (<span style="color:#a5d6ff">1</span>, <span style="color:#ff7b72;font-weight:bold">-</span><span style="color:#a5d6ff">2</span>), (<span style="color:#ff7b72;font-weight:bold">-</span><span style="color:#a5d6ff">1</span>, <span style="color:#ff7b72;font-weight:bold">-</span><span style="color:#a5d6ff">2</span>), (<span style="color:#a5d6ff">2</span>, <span style="color:#a5d6ff">1</span>), (<span style="color:#ff7b72;font-weight:bold">-</span><span style="color:#a5d6ff">2</span>, <span style="color:#a5d6ff">1</span>), (<span style="color:#a5d6ff">2</span>, <span style="color:#ff7b72;font-weight:bold">-</span><span style="color:#a5d6ff">1</span>), (<span style="color:#ff7b72;font-weight:bold">-</span><span style="color:#a5d6ff">2</span>, <span style="color:#ff7b72;font-weight:bold">-</span><span style="color:#a5d6ff">1</span>)]
+</span></span><span style="display:flex;"><span>        self<span style="color:#ff7b72;font-weight:bold">.</span>pos_history <span style="color:#ff7b72;font-weight:bold">=</span> []
+</span></span></code></pre></div><p>Lets implement the rules for finding the next square in a class called <code>NKnight</code>. Its called NKnight because n represents the nth lowest value the knight will go to. For example, if n=0 and we have the possible square values <code>[2, 9, 5]</code>, the knight will go to the square wil value 2. For n=1, the knight will go to the square with value 5. n=3, square with value 9. n=4, since there are only three options, we must take the square with value 9.</p>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff7b72">class</span> <span style="color:#f0883e;font-weight:bold">NKnight</span>(Knight):
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">def</span> __init__(self, n<span style="color:#ff7b72;font-weight:bold">=</span><span style="color:#a5d6ff">0</span>, start_pos: tuple <span style="color:#ff7b72;font-weight:bold">=</span> (<span style="color:#a5d6ff">0</span>,<span style="color:#a5d6ff">0</span>)) <span style="color:#ff7b72;font-weight:bold">-&gt;</span> <span style="color:#79c0ff">None</span>:
+</span></span><span style="display:flex;"><span>        Knight<span style="color:#ff7b72;font-weight:bold">.</span>__init__(self, start_pos)
+</span></span><span style="display:flex;"><span>        self<span style="color:#ff7b72;font-weight:bold">.</span>n <span style="color:#ff7b72;font-weight:bold">=</span> n
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">def</span> <span style="color:#d2a8ff;font-weight:bold">find_next_square</span>(self, coord_vals: Dict[tuple, int])<span style="color:#ff7b72;font-weight:bold">-&gt;</span> Optional[tuple]:
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72;font-weight:bold">...</span>
+</span></span></code></pre></div><p>First, lets collect all the possible squares the knight can go to.</p>
 <p>The intuative approach to marking visited squares will be to have a list of coordinates. Each time the knight moves to a new square, the coordinate is appended to this list. The problem with this approach is, everytime we check if a square is visited, validating if the value is in this list is an O(n) time complexity and O(n) memory. For example, if the knight is on move 10,000 and the next lowest valid square needs to be found. For each of the eight possible knight moves, we need to check if that specific coordinate exist inside of this list. In total, 80,000 list elements need to be checked.</p>
 <p>So instead, we will modify the value of the square when visited. To mark a visitation, the value of the square will become negative. Therefore for each of the eight squares, we just need to check that it is greater than or equal to zero.</p>
-<pre tabindex="0"><code>    def find_next_square(self, coord_vals: Dict[tuple, int])-&gt; Optional[tuple]:
-        visited = []
-        
-        for offset in self.move_offsets:
-            pot_pos = tuple(map(lambda i, j: i + j, offset, self.curr_pos))
-            pot_val = coord_vals[pot_pos]
-
-            if pot_val &gt; 0:
-                visited.append((pot_pos, pot_val))
-
-        if len(visited) == 0:
-            return None
-</code></pre><p>This is the logic for calculating each step of the knight moves. Notice how we will return False when the knight is trapped.</p>
-<pre tabindex="0"><code>def calc_move(self) -&gt; bool:
-        next_pos = self.knight.find_next_square(self.board.coord_vals)
-        
-        if next_pos is None:
-            return False
-
-        self.board.coord_vals[next_pos] *= -1 # update board
-        return True
-</code></pre><p>Next, lets sort the array of avaliable squares by value. We want the lowest value squares so that way we can treat this list like a stack an pop off the lowest value form the end.</p>
-<pre tabindex="0"><code>
-        visited.sort(reverse=True, key=lambda e: e[1])
-
-        for _ in range(self.n):
-            if (len(visited) == 1):
-                break
-            visited.pop()
-
-        result = visited.pop()[0]
-        self.curr_pos = result
-        self.pos_history.append(result)
-        return result
-</code></pre><p>Link to source code on github:
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>    <span style="color:#ff7b72">def</span> <span style="color:#d2a8ff;font-weight:bold">find_next_square</span>(self, coord_vals: Dict[tuple, int])<span style="color:#ff7b72;font-weight:bold">-&gt;</span> Optional[tuple]:
+</span></span><span style="display:flex;"><span>        visited <span style="color:#ff7b72;font-weight:bold">=</span> []
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#ff7b72">for</span> offset <span style="color:#ff7b72;font-weight:bold">in</span> self<span style="color:#ff7b72;font-weight:bold">.</span>move_offsets:
+</span></span><span style="display:flex;"><span>            pot_pos <span style="color:#ff7b72;font-weight:bold">=</span> tuple(map(<span style="color:#ff7b72">lambda</span> i, j: i <span style="color:#ff7b72;font-weight:bold">+</span> j, offset, self<span style="color:#ff7b72;font-weight:bold">.</span>curr_pos))
+</span></span><span style="display:flex;"><span>            pot_val <span style="color:#ff7b72;font-weight:bold">=</span> coord_vals[pot_pos]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#ff7b72">if</span> pot_val <span style="color:#ff7b72;font-weight:bold">&gt;</span> <span style="color:#a5d6ff">0</span>:
+</span></span><span style="display:flex;"><span>                visited<span style="color:#ff7b72;font-weight:bold">.</span>append((pot_pos, pot_val))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ff7b72">if</span> len(visited) <span style="color:#ff7b72;font-weight:bold">==</span> <span style="color:#a5d6ff">0</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#ff7b72">return</span> <span style="color:#79c0ff">None</span>
+</span></span></code></pre></div><p>This is the logic for calculating each step of the knight moves. Notice how we will return False when the knight is trapped.</p>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff7b72">def</span> <span style="color:#d2a8ff;font-weight:bold">calc_move</span>(self) <span style="color:#ff7b72;font-weight:bold">-&gt;</span> bool:
+</span></span><span style="display:flex;"><span>        next_pos <span style="color:#ff7b72;font-weight:bold">=</span> self<span style="color:#ff7b72;font-weight:bold">.</span>knight<span style="color:#ff7b72;font-weight:bold">.</span>find_next_square(self<span style="color:#ff7b72;font-weight:bold">.</span>board<span style="color:#ff7b72;font-weight:bold">.</span>coord_vals)
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#ff7b72">if</span> next_pos <span style="color:#ff7b72;font-weight:bold">is</span> <span style="color:#79c0ff">None</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#ff7b72">return</span> <span style="color:#79c0ff">False</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        self<span style="color:#ff7b72;font-weight:bold">.</span>board<span style="color:#ff7b72;font-weight:bold">.</span>coord_vals[next_pos] <span style="color:#ff7b72;font-weight:bold">*=</span> <span style="color:#ff7b72;font-weight:bold">-</span><span style="color:#a5d6ff">1</span> <span style="color:#8b949e;font-style:italic"># update board</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ff7b72">return</span> <span style="color:#79c0ff">True</span>
+</span></span></code></pre></div><p>Next, lets sort the array of avaliable squares by value. We want the lowest value squares so that way we can treat this list like a stack an pop off the lowest value form the end.</p>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>        visited<span style="color:#ff7b72;font-weight:bold">.</span>sort(reverse<span style="color:#ff7b72;font-weight:bold">=</span><span style="color:#79c0ff">True</span>, key<span style="color:#ff7b72;font-weight:bold">=</span><span style="color:#ff7b72">lambda</span> e: e[<span style="color:#a5d6ff">1</span>])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ff7b72">for</span> _ <span style="color:#ff7b72;font-weight:bold">in</span> range(self<span style="color:#ff7b72;font-weight:bold">.</span>n):
+</span></span><span style="display:flex;"><span>            <span style="color:#ff7b72">if</span> (len(visited) <span style="color:#ff7b72;font-weight:bold">==</span> <span style="color:#a5d6ff">1</span>):
+</span></span><span style="display:flex;"><span>                <span style="color:#ff7b72">break</span>
+</span></span><span style="display:flex;"><span>            visited<span style="color:#ff7b72;font-weight:bold">.</span>pop()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        result <span style="color:#ff7b72;font-weight:bold">=</span> visited<span style="color:#ff7b72;font-weight:bold">.</span>pop()[<span style="color:#a5d6ff">0</span>]
+</span></span><span style="display:flex;"><span>        self<span style="color:#ff7b72;font-weight:bold">.</span>curr_pos <span style="color:#ff7b72;font-weight:bold">=</span> result
+</span></span><span style="display:flex;"><span>        self<span style="color:#ff7b72;font-weight:bold">.</span>pos_history<span style="color:#ff7b72;font-weight:bold">.</span>append(result)
+</span></span><span style="display:flex;"><span>        <span style="color:#ff7b72">return</span> result
+</span></span></code></pre></div><p>Link to source code on github:
 <a href="https://github.com/mhaneman/trapped-knight/tree/main"  class="external-link" target="_blank" rel="noopener">https://github.com/mhaneman/trapped-knight/tree/main</a></p>
 
       </div>
