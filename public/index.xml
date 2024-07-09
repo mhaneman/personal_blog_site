@@ -41,14 +41,14 @@
       <link>http://localhost:1313/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/about/</guid>
-      <description></description>
+      <description> Boeing Link to heading Write Backend BDD tests and implement using Java Write Frontend BDD tests and implement using Selenium and Java Integrate BDD testing into Azure CI Pipeline Fix Frontend and Backend Bugs found using BDD Testing Manual Testing with JIRA Frontend Developer Internship - Digital Twin Link to heading Create interactive dashboard using react Display collected room info using backend data California Polytechnic University Link to heading Bachelor&amp;rsquo;s of Science in Physics Programming Languages Link to heading C# / Java C / C++ Typescript / Javascript HTML and CSS C# GDScript Classes Link to heading Computer Science Link to heading Data Structures Object Oriented Programming Computer Organization Systems Programming Cryptography Introduction to Computer Orientation Physics Link to heading Modern Physics II Physics on the Computer Advanced Topics in Solid State Physics Quantum Physics I Optics Math Link to heading Partial Differential Equations Linear Analysis II Vector Analysis Eletrical Engineering Link to heading Basic Electronics Manufacturing Electronics and Instrumentation </description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/experience/</link>
+      <link>http://localhost:1313/projects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/experience/</guid>
-      <description></description>
+      <guid>http://localhost:1313/projects/</guid>
+      <description> Games Link to heading https://github.com/mhaneman/future_street https://github.com/mhaneman/MKW_clone https://github.com/mhaneman/galactic_goalkeeper https://github.com/mhaneman/Portals visualizers Link to heading https://github.com/mhaneman/spinners physics Link to heading https://github.com/mhaneman/gamma_ray_sim https://github.com/mhaneman/gpu_boltzmann https://github.com/mhaneman/atomic_clock web development Link to heading https://github.com/mhaneman/fb-clone https://github.com/mhaneman/GroupDaw https://github.com/mhaneman/digital-twin-dashboard c++ Link to heading https://github.com/mhaneman/LOE </description>
     </item>
   </channel>
 </rss>

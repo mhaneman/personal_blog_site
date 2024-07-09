@@ -77,8 +77,3 @@ name = "Projects"
 weight = 3
 url = "projects/"
 
-[[menu.main]]
-name = "Contact me"
-weight = 4
-url = "contact/"
-
