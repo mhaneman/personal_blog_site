@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Michael Haneman</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on Michael Haneman</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 05 May 2024 15:58:27 -0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Trapped Knight</title>
+      <link>http://localhost:1313/posts/trapped-knight/</link>
+      <pubDate>Sun, 05 May 2024 15:58:27 -0700</pubDate>
+      <guid>http://localhost:1313/posts/trapped-knight/</guid>
+      <description>Introduction Link to heading A little while ago while browing through the youtube channel Numberphile, I came across a video about this simulation called &amp;ldquo;The Trapped Knight&amp;rdquo;. Given some simple rules, some intersting chaotic patterns emerge.&#xA;Feel free to watch before continuing, but the rules will be summarized below.&#xA;Rules summary Link to heading Let&amp;rsquo;s quickly layout the rules descripted in the video.&#xA;Suppose an infinitly large chessboard with a point of origin, labled with the numeric value of &amp;ldquo;zero&amp;rdquo;.</description>
+    </item>
+  </channel>
+</rss>
