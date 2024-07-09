@@ -1,4 +1,4 @@
-# Boeing
+# Automation Test Engineer - Boeing
 * Write Backend BDD tests and implement using Java 
 * Write Frontend BDD tests and implement using Selenium and Java
 * Integrate BDD testing into Azure CI Pipeline
@@ -8,6 +8,11 @@
 # Frontend Developer Internship - Digital Twin
 * Create interactive dashboard using react
 * Display collected room info using backend data
+
+# Lab Technician - Cal Poly  	
+* Implement software to control and analyze data for  atomic clock
+* Design GUI for Serial Communications in python
+* Refactor LabView code  into python scripts
 
 # California Polytechnic University
 * Bachelor's of Science in Physics
@@ -19,6 +24,17 @@
 * HTML and CSS
 * C#
 * GDScript
+
+# References
+Zackary NJ peterson 
+* professor, computer science, cal poly
+* Email: znjpeterson@gmail.com
+* Website: https://www.znjp.com/
+
+Thomas Bensky
+* professor, physics, cal poly
+* Email: tbensky@calpoly.edu
+* Website: https://tbensky.github.io/
 
 # Classes
 ## Computer Science
@@ -44,4 +60,5 @@
 ## Eletrical Engineering
 * Basic Electronics Manufacturing
 * Electronics and Instrumentation
+
 
