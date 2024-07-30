@@ -11,6 +11,8 @@ externalLink = ""
 series = []
 +++
 
+In Progress ...
+
 # Introduction
 The following variations will be explored from least to most interesting. 
 
