@@ -1,21 +1,61 @@
 # Games
-* https://github.com/mhaneman/future_street
-* https://github.com/mhaneman/MKW_clone
-* https://github.com/mhaneman/galactic_goalkeeper
-* https://github.com/mhaneman/Portals
 
-# visualizers
-* https://github.com/mhaneman/spinners
+## Futuristic Driver
 
-# physics
-* https://github.com/mhaneman/gamma_ray_sim
-* https://github.com/mhaneman/gpu_boltzmann
-* https://github.com/mhaneman/atomic_clock
+- https://github.com/mhaneman/future_street
 
-# web development
-* https://github.com/mhaneman/fb-clone
-* https://github.com/mhaneman/GroupDaw
-* https://github.com/mhaneman/digital-twin-dashboard
+## Mario Kart Wii Clone
+
+- https://github.com/mhaneman/MKW_clone
+
+## Mobile Soccer Goalie Game
+
+- https://github.com/mhaneman/galactic_goalkeeper
+
+## Infinite Runner
+
+- https://github.com/mhaneman/Portals
+
+# Visualizers
+
+Bands need interesting visuals.
+
+## Spinners
+
+- https://github.com/mhaneman/spinners
+
+# Physics
+
+## Gamma Ray Simulation
+
+- https://github.com/mhaneman/gamma_ray_sim
+
+## Boltzmann Simulation
+
+- https://github.com/mhaneman/gpu_boltzmann
+
+## Atomic Clock
+
+- https://github.com/mhaneman/atomic_clock
+
+# Web Development
+
+## Facebook Clone
+
+- https://github.com/mhaneman/fb-clone
+
+## Piano Roll
+
+- https://github.com/mhaneman/GroupDaw
+
+## Dashboard
+
+- https://github.com/mhaneman/digital-twin-dashboard
 
 # c++
-* https://github.com/mhaneman/LOE
+
+## Little Opengl Engine
+
+- https://github.com/mhaneman/LOE
+
+## CS4300
