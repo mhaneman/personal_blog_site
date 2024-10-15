@@ -9,32 +9,11 @@
     <lastBuildDate>Sun, 05 May 2024 15:58:27 -0700</lastBuildDate>
     <atom:link href="http://localhost:1313/authors/michael-haneman/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>All About Graphics</title>
-      <link>http://localhost:1313/posts/all-about-graphics/</link>
-      <pubDate>Sun, 05 May 2024 15:58:27 -0700</pubDate>
-      <guid>http://localhost:1313/posts/all-about-graphics/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>My First Post</title>
-      <link>http://localhost:1313/posts/my-first-post/</link>
-      <pubDate>Sun, 05 May 2024 15:58:27 -0700</pubDate>
-      <guid>http://localhost:1313/posts/my-first-post/</guid>
-      <description>My First Post</description>
-    </item>
-    <item>
       <title>The Trapped Knight</title>
       <link>http://localhost:1313/posts/trapped-knight/</link>
       <pubDate>Sun, 05 May 2024 15:58:27 -0700</pubDate>
       <guid>http://localhost:1313/posts/trapped-knight/</guid>
-      <description>Introduction Link to heading A little while ago while browing through the youtube channel Numberphile, I came across a video about this simulation called &amp;ldquo;The Trapped Knight&amp;rdquo;. Given some simple rules, some intersting chaotic patterns emerge.&#xA;Feel free to watch before continuing, but the rules will be summarized below.&#xA;Rules summary Link to heading Let&amp;rsquo;s quickly layout the rules descripted in the video.&#xA;Suppose an infinitly large chessboard with a point of origin, labled with the numeric value of &amp;ldquo;zero&amp;rdquo;.</description>
-    </item>
-    <item>
-      <title>The Trapped Knight Variations</title>
-      <link>http://localhost:1313/posts/trapped-knight-cont/</link>
-      <pubDate>Sun, 05 May 2024 15:58:27 -0700</pubDate>
-      <guid>http://localhost:1313/posts/trapped-knight-cont/</guid>
-      <description> Introduction Link to heading The following variations will be explored from least to most interesting.&#xA;The Stubborn Knight Link to heading Rule Modifications:&#xA;The Knight will go the nth lowest unvisited square The Reincarnated Knight Link to heading Rule Modifications:&#xA;The knight will visit the lowest, unvisited, undead square If the knight is trapped, the simulation is repeated but the trapped square will be marked as &amp;lsquo;dead&amp;rsquo; The Clever knight Link to heading If the knight is trapped, the knight will move back to the previous square and go to the second lowest square The Anti-prime Knight Link to heading The knight cannot visit squres with a prime value The Forgetful Knight Link to heading The knight can only remember up to n previous squares </description>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;&#xA;  Introduction&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#introduction&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;Not too long ago while browsing, The Youtbe aglorithm blessed me with a Numberphile video called &amp;ldquo;The Trapped Knight&amp;rdquo;. Given simple rules for how a knight moves on a chess board, some intersting chaotic, patterns emerge.&lt;/p&gt;&#xA;&#xA;&#xA;    &#xA;    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;&#xA;      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/RGQe8waGJ4w?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&#xA;      &gt;&lt;/iframe&gt;&#xA;    &lt;/div&gt;&#xA;&#xA;&lt;h1 id=&#34;rules-summary&#34;&gt;&#xA;  Rules Summary&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#rules-summary&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Suppose an infinitly large chessboard. Give a square a numeric value of 1. This square will be the point of origin.&lt;/li&gt;&#xA;&lt;li&gt;From this origin, the rest of the real, positive integers will be put on the remaining squares in a spiral shape.&lt;/li&gt;&#xA;&lt;li&gt;The knight will begin its journey at the origin&lt;/li&gt;&#xA;&lt;li&gt;The knight will continouly move to the square with the lowest value that has not been visited yet&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;(insert manim graph)&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

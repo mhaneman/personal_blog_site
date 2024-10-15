@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "coder-dark.css",
-	"sourceRoot": "/home/spacecone/Programming/webdev/personal_blog_site",
+	"sourceRoot": "/home/spacecone/Programming/webdev-projects/hugo-projects/personal_blog_site",
 	"sources": [
 		"themes/hugo-coder-theme/assets/scss/coder-dark.scss",
 		"themes/hugo-coder-theme/assets/scss/_variables.scss",
