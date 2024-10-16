@@ -1,7 +1,7 @@
 +++ 
-draft = true
+draft = false
 date = 2024-10-15
-title = "Building a Subway Surfers Clone in Godot"
+title = "Building a Subway Surfers Clone in Godot pt.1"
 description = ""
 slug = ""
 authors = ["Michael Haneman"]
@@ -13,24 +13,28 @@ series = []
 
 # Introduction
 
-First we are going to create a minimal viable project
+Welcome to Part one!
 
-then introduce free audio and 3D assets
+In part 1, we are going to:
 
-I'm going to try giving some instructions in Gherkin Cucumber. It's pretty self explanitory to follow, but heres some documentation if you get stuck.
+1. Download Godot and other Resources
+2. Create a Minimal Viable Product (MVP)
+
+In Part 2, we are going to:
+
+1. introduce free audio and 3D assets
+
+I'm going to try giving some instructions in Gherkin Cucumber. It's pretty self explanitory what it is, but heres some documentation if you get stuck or if it's confusing.
+
 [Gherkin Cucumber Tutorial](https://google.com)
 
-# Goals and Features
+# Goals for Part 1
 
-1. Create Minimal Viable Project 
-- create player controller 
-- create block manager 
-- create simple flat platform 
+- create player controller
+- create block manager
+- create simple flat platform
 - create simple barrel obstacle
 - create coin entity
-
-2. Wanted Features 
-- foo 
 
 # Theory
 
@@ -94,10 +98,9 @@ It's a good habit to already have a place / system for importing assets before s
 Given the user has the file explore visible
 ```
 
-## Create Singleton 
+## Create Singleton
 
 create singleton for player attributes (eg. coins, high score, etc ...)
-
 
 # Create Game Scene
 
@@ -107,8 +110,8 @@ Attach script to scene
 
 # Creating The Player
 
-
 ## Create a new CharacterBody3D Scene
+
 ```cucumber
 Given the user has the file explore visible
 When the user "right clicked" on "res://game/_player/" folder
@@ -122,23 +125,24 @@ Then new scene is created
 ```
 
 ## Attach Script to the new scene
+
 ```cucumber
 Given the user has the file explore visible
-When the user clicks "Add Script" icon 
-And the user saved script 
+When the user clicks "Add Script" icon
+And the user saved script
 Then a script is attached to the scene in the same folder
 ```
 
-## Adding The Player Body 
+## Adding The Player Body
 
 1. add a capsole collision shape to the root node
-2. add a capsole mesh to the collision shape 
-
+2. add a capsole mesh to the collision shape
 
 ## Adding The Camera
+
 For now, the camera will be glued to the player. The camera will just be an offset of the players coordinates.
 
-1. Add camera as child node 
+1. Add camera as child node
 2. Give the camera an offset
 
 ## Script
@@ -164,8 +168,7 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 ```
 
-
-# Minimal Viable Platform Block 
+# Minimal Viable Platform Block
 
 Let's quickly create something the player can stand on and something our blocks_manager can spawn
 
@@ -177,18 +180,18 @@ Let's quickly create something the player can stand on and something our blocks_
 # Minimal Viable Entity - Coin
 
 1. in `res://game/blocks/entites` create a new `area3D` Scene
-2. create cylander collision shape and rotate 
+2. create cylander collision shape and rotate
 3. add mesh to collision shape
-4. attach script to coin 
+4. attach script to coin
 5. signal -> when `Player` body entered, despawn
 6. coins++ to global singleton
 
-Note: designing the player class to contain the coin count is also fine. 
+Note: designing the player class to contain the coin count is also fine.
 However, since there is only one entity that can hold 'currency', it will be easier to store has a global variable.
-this is expecally true if you want to implement a shop. 
+this is expecally true if you want to implement a shop.
 Instead of having to reference the player class (assuming its initalized), we only have to call a variable
 
-# Blocks Manager 
+# Blocks Manager
 
 Create "blocks_manager" scene
 All spawned platforms, obsticals, and entites are going to be spawned in the "blocks_manager".
@@ -206,10 +209,10 @@ Then the user saw "Create New Scene" popup window
 
 To give the illusion of the player moving forwards, each individual platform is going to move in the -z axis at a constant rate
 
-## Spawning and Despawning Objects 
+## Spawning and Despawning Objects
 
 The distance away from the player in which objects despawn depends on the longest object plus some buffer. Currently in the MVP, each platform will be of the same length
 
 ## Object Pool
 
-Since gdscript already caches scenes, an object pool is not nessisary. However, c# does not. 
+Since gdscript already caches scenes, an object pool is not nessisary. However, c# does not.
