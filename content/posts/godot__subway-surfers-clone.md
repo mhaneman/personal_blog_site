@@ -1,11 +1,11 @@
 +++ 
-draft = false
+draft = true
 date = 2024-10-15
 title = "Building a Subway Surfers Clone in Godot"
 description = ""
 slug = ""
 authors = ["Michael Haneman"]
-tags = ["Godot"]
+tags = ["Godot", "Procedural Generation"]
 categories = ["Game Dev"]
 externalLink = ""
 series = []
@@ -202,4 +202,14 @@ and the user "clicked" on "Scene"
 Then the user saw "Create New Scene" popup window
 ```
 
+# Managing Blocks
 
+To give the illusion of the player moving forwards, each individual platform is going to move in the -z axis at a constant rate
+
+## Spawning and Despawning Objects 
+
+The distance away from the player in which objects despawn depends on the longest object plus some buffer. Currently in the MVP, each platform will be of the same length
+
+## Object Pool
+
+Since gdscript already caches scenes, an object pool is not nessisary. However, c# does not. 

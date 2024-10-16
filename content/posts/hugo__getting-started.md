@@ -1,11 +1,11 @@
 +++ 
-draft = false
+draft = true
 date = 2024-10-15
-title = "A Minimal Approach to Building Websites with Hugo"
+title = "A Minimalist Approach to Building Websites with Hugo"
 description = ""
 slug = ""
 authors = ["Michael Haneman"]
-tags = ["Hugo", "Golang"]
+tags = ["Hugo", "Golang", "HTML", "SCSS"]
 categories = ["Web Dev"]
 externalLink = ""
 series = []
@@ -14,10 +14,10 @@ series = []
 # Introduction
 
 Hugo is a static site generator
-Great for Seperation of data and logic
-example: client who wants to update website frequently with minimal costs
+Great for Websites with a lot of content because of seperation of data and logic
+example: client who wants to update website frequently with minimal overhead costs
 
-## Downsides
+## Hugo has a Client Solution
 
 While simple to setup, themes tend to have a dawnting amount of complexity
 If you want to make a simple override to a theme, you need a somewhat deep understanding of hugo, golang hugo themes, and the logic of the theme iteself.
@@ -47,8 +47,18 @@ sudo apt install hugo
 hugo new site minimal_site
 ```
 
-We could write everything in
+We could write everything in the site project. 
+However let's stick to the philosphy of seperation of data and code. 
+All golang code to generate the website will be in the theme directory and the page content will stay in the site. 
+Therefore in the future, we can go back and potentially change the style and layout of the website in a new theme 
 
 ```
 hugo new theme minimal_theme
 ```
+
+# content folder layout 
+
+
+# minimal code to generate website 
+
+
