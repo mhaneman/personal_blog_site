@@ -13,6 +13,8 @@ series = []
 
 # Introduction
 
+(This post is a work-in-progress)
+
 Welcome to Part one!
 
 In part 1, we are going to:
@@ -211,8 +213,4 @@ To give the illusion of the player moving forwards, each individual platform is 
 
 ## Spawning and Despawning Objects
 
-The distance away from the player in which objects despawn depends on the longest object plus some buffer. Currently in the MVP, each platform will be of the same length
-
-## Object Pool
-
-Since gdscript already caches scenes, an object pool is not nessisary. However, c# does not.
+Lets have an Area3D node behind the player. Once an object leaves the area, the object despawns and a new one is replaced at the end
