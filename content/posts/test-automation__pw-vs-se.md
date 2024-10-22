@@ -14,20 +14,17 @@ series = []
 # Introduction
 
 (BDD testing an modernization)
-During my time as a Test Automation Engineer at Boeing, the inital modernization of e2e testing was to replace TestComplete with a newer framework. 
+During my time as a Test Automation Engineer at Boeing, the inital modernization of e2e testing was to replace TestComplete with a newer framework.
 
 The goto was a super set of Selenium called Selenide, a tried and true browser automation tool.
 
-At the time, playwright was still early in its development cycle so it was seen as an unessisary risk.   
+At the time, playwright was still early in its development cycle so it was seen as an unessisary risk.
 
 # Comparing Out-of-the-box Features
-
-
 
 # Difference in Finding Elements
 
 A major advantage playwright has over selenium is its strategy of locating and interacting with DOM elements.
-
 
 Playwright can refind elements if stale.
 

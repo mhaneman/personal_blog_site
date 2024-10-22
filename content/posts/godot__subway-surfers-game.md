@@ -30,40 +30,47 @@ I'm going to try giving some instructions in Gherkin Cucumber. It's pretty self 
 
 [Gherkin Cucumber Tutorial](https://google.com)
 
-# Goals for Part 1
+## Goals
 
-- create player controller
-- create block manager
+- create MVP player and player controller
+- create blocks manager
 - create simple flat platform
 - create simple barrel obstacle
 - create coin entity
 
 # Theory
 
-The player doesn't move forward, the floor does.
-This solves two problems. The first one, the player will move with an extremely predictable speed because its the scene thats moving the player, not the player kinematics. If the player kinematics were responsible for moving the player forward, we will have to account for slow downs on going up slopes, speed ups when going down slopes. We will also have to account for potential physics collisions.
+Infinite runners like Subway Surfers are unique. They involve a good amount of visual trickery to make the player believe in the movement present on screen. What does this mean?
 
-The player also doesn't left and right, the floor does.
-This is because the player will be in lanes and we cant rely on the physics engine to move the player to integer coordinates in a smooth manner. This is expecally true if the player has kinematic collisions with other objects.
+Firstly, The player doesn't move forward, everything else does. Why?
+
+Having the floor move solves two major problems. The first problem being consistent speed. If the floor moves and the player stays in place, the player will appear to move with an extremely predictable speed. If the player kinematics were responsible for moving the player forward, the player kinematics would have to account for accelerations on slopes and physics collisions with the player would have to be adjusted for both objects.
+
+The player doesn't move left and right, everything else does.
+In a game like subway surfers, the player is forced into lanes with integer precsision. Even if the player is outside the lane some float error, eventually the player will start drifting out of the lane. Not only will it look weird, but it's a reliability. The game cant rely on the physics engine to move the player to integer coordinates in a smooth manner. This is expecally true if the player has kinematic collisions with other objects.
 
 The only kinematics the player will have is jumping up and down. There shouldn't be and physics problems related to this and this is the simplest approach virtical movement.
 
-Basically, don't fight the physics engine. If theres kinematics that need to be highly controlled and/or precise, try not to implement through the physics engine.
+Don't fight the physics engine. If there is movement that needs to be highly controlled and/or precise, try not to implement through the physics engine.
 
 # Gathering Everything needed
 
-## download godot
+## Install Godot
 
 [Godot Offical Site](https://google.com)
 If only creating a minimal viable project, continue to Project Setup
 
-## download blender
+## Install Blender
 
 [Blender Offical Site](https://google.com)
 
-## download assets
+## Download Assets
 
-[Kenny Assets](https://google.com)
+[Kenny Assets - Prototype Kit](https://kenney.nl/assets/prototype-kit)
+
+[Kenny Assets - Mini Characters 1](https://kenney.nl/assets/mini-characters-1)
+
+[Kenny Assets - Train Kit](https://kenney.nl/assets/train-kit)
 
 [Audio Resource](https://google.com)
 

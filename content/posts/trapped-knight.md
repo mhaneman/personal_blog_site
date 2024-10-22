@@ -11,8 +11,6 @@ externalLink = ""
 series = []
 +++
 
-
-
 # Introduction
 
 Not too long ago while browsing, The Youtbe aglorithm blessed me with a Numberphile video called "The Trapped Knight". Given simple rules for how a knight moves on a chess board, some intersting chaotic, patterns emerge.
@@ -20,14 +18,15 @@ Not too long ago while browsing, The Youtbe aglorithm blessed me with a Numberph
 {{< youtube id=RGQe8waGJ4w >}}
 
 # Rules Summary
-1. Suppose an infinitly large chessboard. Give a square a numeric value of 1. This square will be the point of origin. 
+
+1. Suppose an infinitly large chessboard. Give a square a numeric value of 1. This square will be the point of origin.
 2. From this origin, the rest of the real, positive integers will be put on the remaining squares in a spiral shape.
-3. The knight will begin its journey at the origin 
+3. The knight will begin its journey at the origin
 4. The knight will continouly move to the square with the lowest value that has not been visited yet
 
 (insert manim graph)
 
-For generating the spiral shape, two decisions have to be made. Firstly, which square from the origin will be visited next: top, bottom, left, or right square? Secondly, which direction will the spiral be generated: clockwise or counter clockwise? Ultimatly, these decisions are abritrary because changing these conditions will only create reflections and rotations in the final graph. The general shape and logic are not dependent on the inital conditions for the spiral. However to match the results found in the video, the first square from the origin will start on the square below and the spiral will continue counter-clockwise. 
+For generating the spiral shape, two decisions have to be made. Firstly, which square from the origin will be visited next: top, bottom, left, or right square? Secondly, which direction will the spiral be generated: clockwise or counter clockwise? Ultimatly, these decisions are abritrary because changing these conditions will only create reflections and rotations in the final graph. The general shape and logic are not dependent on the inital conditions for the spiral. However to match the results found in the video, the first square from the origin will start on the square below and the spiral will continue counter-clockwise.
 
 # Result
 
@@ -38,16 +37,16 @@ For generating the spiral shape, two decisions have to be made. Firstly, which s
 ## Generating the Spiral
 
 To Generate the spiral, we will keep track of a 2d vector that rotates 90 degrees after it has moved m (the length of the side of the spiral) squares.
-The number of squares the vector will move will be m+1 after 2 rotations. 
-Technically, the logic to generate the spiral would need to run indefinatly to garentee sufficiency for the simulation. 
-But, we will artifically cap the size of the sprial at `spiral_size`. 
-If the simulation runs out of squares, the simulation will need to run again with a higher cap size. 
+The number of squares the vector will move will be m+1 after 2 rotations.
+Technically, the logic to generate the spiral would need to run indefinatly to garentee sufficiency for the simulation.
+But, we will artifically cap the size of the sprial at `spiral_size`.
+If the simulation runs out of squares, the simulation will need to run again with a higher cap size.
 
-Clearly, artifically capping the spiral size is not ideal. 
-What if the simulation has a large number of steps and needs to run for a long time? 
-Can't we have an algorithm to determine the number of squares needed? 
-This in itself is an interesting statistical problem. 
-What area of valued squares are needed to garentee the knight is able to move n times? 
+Clearly, artifically capping the spiral size is not ideal.
+What if the simulation has a large number of steps and needs to run for a long time?
+Can't we have an algorithm to determine the number of squares needed?
+This in itself is an interesting statistical problem.
+What area of valued squares are needed to garentee the knight is able to move n times?
 However in practice, the path of the knight tends to tighly wrap around the origin, making this problem unlikely and therefore ignored.
 
 ```python
@@ -70,7 +69,7 @@ def gen_spiral(self, spiral_size, negate_primes):
 
 ## Moving the knight and checking visited squares
 
-We will have a base class called Knight. But why? Why not just implement everything in the knight class? In the future, we may want to create new rules to apply to the knight. So, for each implementation of these rules, the Knight class will be inherited and the abstract method `find_next_square` will be implemented. In this way, each implementation is organized in each class and we will not have to duplicate setup code. 
+We will have a base class called Knight. But why? Why not just implement everything in the knight class? In the future, we may want to create new rules to apply to the knight. So, for each implementation of these rules, the Knight class will be inherited and the abstract method `find_next_square` will be implemented. In this way, each implementation is organized in each class and we will not have to duplicate setup code.
 
 ```python
 class Knight:
@@ -97,15 +96,15 @@ First, lets collect all the possible squares the knight can go to.
 
 The intuative approach to marking visited squares will be to have a list of coordinates. Each time the knight moves to a new square, the coordinate is appended to this list. The problem with this approach is, everytime we check if a square is visited, validating if the value is in this list is an O(n) time complexity and O(n) memory. For example, if the knight is on move 10,000 and the next lowest valid square needs to be found. For each of the eight possible knight moves, we need to check if that specific coordinate exist inside of this list. In total, 80,000 list elements need to be checked.
 
-Another approach would be to create a hashmap of all the visited squares as tuple keys. Therefore lookup will be O(1). 
+Another approach would be to create a hashmap of all the visited squares as tuple keys. Therefore lookup will be O(1).
 However, let's save a little extra memory. If a square when visited, the value will be negated. Therefore, for each lookup of the eight squares, we just need to check that it is greater than zero.
 
-For the future variations, it's probably nessisary to keep a hashmap of visited squares. But, this will due for now. 
+For the future variations, it's probably nessisary to keep a hashmap of visited squares. But, this will due for now.
 
 ```python
     def find_next_square(self, coord_vals: Dict[tuple, int])-> Optional[tuple]:
         visited = []
-        
+
         for offset in self.move_offsets:
             pot_pos = tuple(map(lambda i, j: i + j, offset, self.curr_pos))
             pot_val = coord_vals[pot_pos]
@@ -119,10 +118,11 @@ For the future variations, it's probably nessisary to keep a hashmap of visited 
 ```
 
 This is the logic for calculating each step of the knight moves. Notice how we will return False when the knight is trapped.
+
 ```python
 def calc_move(self) -> bool:
         next_pos = self.knight.find_next_square(self.board.coord_vals)
-        
+
         if next_pos is None:
             return False
 

@@ -9,6 +9,34 @@
     <lastBuildDate>Tue, 15 Oct 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>A Minimalist Approach to Building Websites with Hugo</title>
+      <link>http://localhost:1313/posts/hugo__getting-started/</link>
+      <pubDate>Tue, 15 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/hugo__getting-started/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;&#xA;  Introduction&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#introduction&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;(post is in progress)&#xA;using hugo 0.136&lt;/p&gt;&#xA;&lt;p&gt;Hugo is a static site generator&#xA;Great for Websites with a lot of content because of seperation of data and logic&#xA;Great for sites that are for text content without complex UI interactions&#xA;example: client who wants to update website frequently with minimal overhead costs&lt;/p&gt;&#xA;&lt;h2 id=&#34;hugo-as-a-client-solution&#34;&gt;&#xA;  Hugo as a Client Solution&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#hugo-as-a-client-solution&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;For clients who need cheap solutions for websites that need simple solutions (simple text, contact, links, ect). Hugo is a great soluiton.&#xA;Compared to wordpress, a client might need to spend upwards of ~$20 a month (hosting, plugins, domain name). While with hugo, hosting can be a simple as github/gitlab pages w/ a CI pipeline for content. At most, the client will only have to spend ~$2 a year.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Building a Subway Surfers Clone in Godot pt.1</title>
+      <link>http://localhost:1313/posts/godot__subway-surfers-game/</link>
+      <pubDate>Tue, 15 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/godot__subway-surfers-game/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;&#xA;  Introduction&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#introduction&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;(This post is a work-in-progress)&lt;/p&gt;&#xA;&lt;p&gt;Welcome to Part one!&lt;/p&gt;&#xA;&lt;p&gt;In part 1, we are going to:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Download Godot and other Resources&lt;/li&gt;&#xA;&lt;li&gt;Create a Minimal Viable Product (MVP)&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;In Part 2, we are going to:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;introduce free audio and 3D assets&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;I&amp;rsquo;m going to try giving some instructions in Gherkin Cucumber. It&amp;rsquo;s pretty self explanitory what it is, but heres some documentation if you get stuck or if it&amp;rsquo;s confusing.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hugo as a Client Solution for Startups and Small Buisnesses</title>
+      <link>http://localhost:1313/posts/hugo__client-solution/</link>
+      <pubDate>Tue, 15 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/hugo__client-solution/</guid>
+      <description>&lt;h1 id=&#34;target-customers&#34;&gt;&#xA;  Target Customers&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#target-customers&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;</description>
+    </item>
+    <item>
+      <title>LearnOpenGL Setup with VKPKG for Linux</title>
+      <link>http://localhost:1313/posts/graphics__learnopengl-getting-started/</link>
+      <pubDate>Tue, 15 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/graphics__learnopengl-getting-started/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;&#xA;  Introduction&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#introduction&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;LearnOpenGL is a great resource for getting started with Graphics Programming.&#xA;A hard truth of c++ is how hard it is to link libaries.&#xA;VCPKG is a great solution to get all packages needed for LearnOpenGL working.&lt;/p&gt;&#xA;&lt;p&gt;Windows users will probably use VCPKG through Visual Studio. For Linux, its a little more hands on.&lt;/p&gt;&#xA;&lt;h1 id=&#34;install-vcpkg&#34;&gt;&#xA;  Install VCPKG&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#install-vcpkg&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://google.com&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Offical Site&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Lessons Learned after 1.5 years as a Test Automation Engineer</title>
       <link>http://localhost:1313/posts/test-automation__regrets/</link>
       <pubDate>Tue, 15 Oct 2024 00:00:00 +0000</pubDate>

@@ -9,6 +9,20 @@
     <lastBuildDate>Tue, 15 Oct 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Game Dev</title>
+      <link>http://localhost:1313/categories/game-dev/</link>
+      <pubDate>Tue, 15 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/game-dev/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Graphics</title>
+      <link>http://localhost:1313/categories/graphics/</link>
+      <pubDate>Tue, 15 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/graphics/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Test Automation</title>
       <link>http://localhost:1313/categories/test-automation/</link>
       <pubDate>Tue, 15 Oct 2024 00:00:00 +0000</pubDate>

@@ -48,13 +48,13 @@ The knight will continouly move to the square with the lowest value that has not
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="The Trapped Knight">
-  <meta name="twitter:description" content=" Introduction Link to heading Not too long ago while browsing, The Youtbe aglorithm blessed me with a Numberphile video called “The Trapped Knight”. Given simple rules for how a knight moves on a chess board, some intersting chaotic, patterns emerge.
+  <meta name="twitter:description" content="Introduction Link to heading Not too long ago while browsing, The Youtbe aglorithm blessed me with a Numberphile video called “The Trapped Knight”. Given simple rules for how a knight moves on a chess board, some intersting chaotic, patterns emerge.
 Rules Summary Link to heading Suppose an infinitly large chessboard. Give a square a numeric value of 1. This square will be the point of origin. From this origin, the rest of the real, positive integers will be put on the remaining squares in a spiral shape. The knight will begin its journey at the origin The knight will continouly move to the square with the lowest value that has not been visited yet (insert manim graph)">
 
 <meta property="og:url" content="http://localhost:1313/posts/trapped-knight/">
   <meta property="og:site_name" content="Michael Haneman">
   <meta property="og:title" content="The Trapped Knight">
-  <meta property="og:description" content=" Introduction Link to heading Not too long ago while browsing, The Youtbe aglorithm blessed me with a Numberphile video called “The Trapped Knight”. Given simple rules for how a knight moves on a chess board, some intersting chaotic, patterns emerge.
+  <meta property="og:description" content="Introduction Link to heading Not too long ago while browsing, The Youtbe aglorithm blessed me with a Numberphile video called “The Trapped Knight”. Given simple rules for how a knight moves on a chess board, some intersting chaotic, patterns emerge.
 Rules Summary Link to heading Suppose an infinitly large chessboard. Give a square a numeric value of 1. This square will be the point of origin. From this origin, the rest of the real, positive integers will be put on the remaining squares in a spiral shape. The knight will begin its journey at the origin The knight will continouly move to the square with the lowest value that has not been visited yet (insert manim graph)">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
@@ -334,7 +334,7 @@ However, let&rsquo;s save a little extra memory. If a square when visited, the v
 <p>For the future variations, it&rsquo;s probably nessisary to keep a hashmap of visited squares. But, this will due for now.</p>
 <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>    <span style="color:#ff7b72">def</span> <span style="color:#d2a8ff;font-weight:bold">find_next_square</span>(self, coord_vals: Dict[tuple, int])<span style="color:#ff7b72;font-weight:bold">-&gt;</span> Optional[tuple]:
 </span></span><span style="display:flex;"><span>        visited <span style="color:#ff7b72;font-weight:bold">=</span> []
-</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>        <span style="color:#ff7b72">for</span> offset <span style="color:#ff7b72;font-weight:bold">in</span> self<span style="color:#ff7b72;font-weight:bold">.</span>move_offsets:
 </span></span><span style="display:flex;"><span>            pot_pos <span style="color:#ff7b72;font-weight:bold">=</span> tuple(map(<span style="color:#ff7b72">lambda</span> i, j: i <span style="color:#ff7b72;font-weight:bold">+</span> j, offset, self<span style="color:#ff7b72;font-weight:bold">.</span>curr_pos))
 </span></span><span style="display:flex;"><span>            pot_val <span style="color:#ff7b72;font-weight:bold">=</span> coord_vals[pot_pos]
@@ -347,7 +347,7 @@ However, let&rsquo;s save a little extra memory. If a square when visited, the v
 </span></span></code></pre></div><p>This is the logic for calculating each step of the knight moves. Notice how we will return False when the knight is trapped.</p>
 <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff7b72">def</span> <span style="color:#d2a8ff;font-weight:bold">calc_move</span>(self) <span style="color:#ff7b72;font-weight:bold">-&gt;</span> bool:
 </span></span><span style="display:flex;"><span>        next_pos <span style="color:#ff7b72;font-weight:bold">=</span> self<span style="color:#ff7b72;font-weight:bold">.</span>knight<span style="color:#ff7b72;font-weight:bold">.</span>find_next_square(self<span style="color:#ff7b72;font-weight:bold">.</span>board<span style="color:#ff7b72;font-weight:bold">.</span>coord_vals)
-</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>        <span style="color:#ff7b72">if</span> next_pos <span style="color:#ff7b72;font-weight:bold">is</span> <span style="color:#79c0ff">None</span>:
 </span></span><span style="display:flex;"><span>            <span style="color:#ff7b72">return</span> <span style="color:#79c0ff">False</span>
 </span></span><span style="display:flex;"><span>
