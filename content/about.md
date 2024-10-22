@@ -1,53 +1,98 @@
-# Experience
+# Job History
 
 ## Automation Test Engineer - Boeing
 
-- Write Backend BDD tests and implement using Java
-- Write Frontend BDD tests and implement using Selenium and Java
-- Integrate BDD testing into Azure CI Pipeline
+### Tasks
+
+- Develop SOAP and RESTful API web service automation scripts
+- Creation of automation tools in Java and Selenium for the creation of automation scripts
+- Develop UI/functional automation scripts in JavaScript
 - Fix Frontend and Backend Bugs found using BDD Testing
-- Manual Testing with JIRA
+
+### Technologies
+
+- Azure DevOps
+- JIRA
+- Selenium / Selenide
+- Java, Intellij
+- Javascript and Typescript
+- HTML/CSS
+- TestComplete
+- SoapUI
+- SQL (Postgres)
+
+## Frontend Developer - Think Tank QA
+
+### Tasks
+
+- Design and implement website mock ups made in Figma
+- Maintain and update Wordpress site
+
+### Technologies
+
+- Wordpress
+- Figma
 
 ## Frontend Developer Internship - Digital Twin
+
+### Tasks
 
 - Create interactive dashboard using react
 - Display collected room info using backend data
 
+### Technologies
+
+- React
+- Docker
+
 ## Lab Technician - Cal Poly
+
+### Tasks
 
 - Implement software to control and analyze data for atomic clock
 - Design GUI for Serial Communications in python
-- Refactor LabView code into python scripts
+- Refactor LabView into python scripts
+
+### Technologies
+
+- python
+- Ubuntu Linux
+- LabView
 
 # Education
 
-California Polytechnic State University
-Bachelor's of Science in Physics
+## California Polytechnic State University
+
+- Bachelor's of Science in Physics
+
+## Saint Luis University
+
+- Boeing Education Reimbursement
 
 # Programming Languages
 
 - C# / Java
-- C / C++
+- C
+- C++
 - Typescript / Javascript
 - HTML and CSS
-- C#
-- GDScript
+- Python
 
 # References
 
 Zackary NJ peterson
 
-- professor, computer science, cal poly
+- Professor, Computer Science, California Polytechnic State University
 - Email: znjpeterson@gmail.com
 - Website: https://www.znjp.com/
 
 Thomas Bensky
 
-- professor, physics, cal poly
+- Professor, Physics, California Polytechnic State University
 - Email: tbensky@calpoly.edu
 - Website: https://tbensky.github.io/
 
-# Classes of Potential Interest
+# Courses
 
 ## Computer Science
 
@@ -57,6 +102,7 @@ Thomas Bensky
 - Systems Programming
 - Cryptography
 - Introduction to Computer Orientation
+- Introduction to Real-Time Embedded Systems Programming
 
 ## Physics
 
@@ -72,7 +118,7 @@ Thomas Bensky
 - Linear Analysis II
 - Vector Analysis
 
-## Eletrical Engineering
+## Electrical Engineering
 
 - Basic Electronics Manufacturing
 - Electronics and Instrumentation

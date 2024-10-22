@@ -65,7 +65,7 @@ style = "github-dark"
 [[menu.main]]
   name = "Articles"
   weight = 1
-  url  = "posts/"
+  url  = "articles/"
 
 [[menu.main]]
   name = "Experience"
