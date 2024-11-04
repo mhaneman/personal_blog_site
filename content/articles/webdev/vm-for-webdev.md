@@ -131,17 +131,25 @@ Remember, by default your super key is your windows key (unless you changed it)
 
 ## Optional - Nicer Terminal Emulator
 
-```
+```bash
 sudo apt install terminator
 nano ~/.config/i3/config
 ```
 
-change the following line
+change the following line to:
 
+```bash
+#start a terminal
+bindsym $mod+Return exec terminator
 ```
-this
-that
-```
+
+## Optional - Install Homebrew
+
+The stable Debian packages are... a little too stable. As in, Debian packages are a little dated. Take the hugo package as an example. As of writing this, the version of hugo in Debian is `0.111.0` while the current release version is `1.136.0`. Sure, there hasn't been a major version of hugo released, but there are many deprectation in themes we need to worry about. 
+
+Brew is a package manager that is used on both Linux and MacOS. It's mostly geared toward MacOS, but it's mostly fine in Debian. The alternatives would be to build from source, use snaps or flatpaks, or use nix. All of those are fine solutions, but brew just gets things up and running the fastest. 
+
+[Install Homebrew](https://brew.sh/)
 
 ## Optional - guest agents
 
@@ -179,13 +187,27 @@ just install via the curl command
 
 [Official Documentation](https://github.com/nvm-sh/nvm)
 
-## optional - install firefox
+## Serve the Website from the Guest Machine to Host Machine
+
+The Virtual Machine was created with the NAT network interface. This means that the host has access to the guest ip address. We just need to make sure that we are serving our app on the guest network, not localhost.
+
+First we need to figure out what our guest ip address is
 
 ```
-sudo apt install firefox-esr
+ip addr
 ```
 
-## optional - port forward to host machine
+### NodeJS
+
+```
+npm run dev -- --host 192.168.x.x
+```
+
+### Hugo
+
+```
+hugo serve --bind 192.168.x.x --baseURL 192.168.x.x
+```
 
 # Conclusion
 
