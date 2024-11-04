@@ -155,19 +155,19 @@ Brew is a package manager that is used on both Linux and MacOS. It's mostly gear
 
 If you want the virtual machine resolution to look a little nicer and adjust the host window. We can install the following guest agents
 
-```
+```bash
 sudo apt install qemu-guest-agent
 ```
 
 If the text becomes very small, its because your DPI is very large.
 
-```
+```bash
 sudo nano /etc/X11/XResources/X11-common
 ```
 
 Add the following line. Adjust the DPI to your needs
 
-```
+```bash
 Xfc.dpi: 140
 ```
 
@@ -177,8 +177,14 @@ Xfc.dpi: 140
 
 snaps is fine, but I prefer just using the proprietary key and install with apt because its easier to execute vscode in the terminal
 
-```
+```bash
 code .
+```
+
+If you want to open vs code and close out of the terminal in one command. 
+
+```bash
+code . && exit
 ```
 
 ## Install nvm
@@ -193,22 +199,18 @@ The Virtual Machine was created with the NAT network interface. This means that 
 
 First we need to figure out what our guest ip address is
 
-```
+```bash
 ip addr
 ```
 
 ### NodeJS
 
-```
+```bash
 npm run dev -- --host 192.168.x.x
 ```
 
 ### Hugo
 
-```
+```bash
 hugo serve --bind 192.168.x.x --baseURL 192.168.x.x
 ```
-
-# Conclusion
-
-Welcome to the end. yes, this might of seemed like a lot of setup, but we only need to do it once! Hopefully this helped.
