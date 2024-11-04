@@ -2,103 +2,103 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/articles/webdev/hugo__getting-started/</loc>
+    <loc>//192.168.122.98:1313/articles/</loc>
+    <lastmod>2024-11-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//192.168.122.98:1313/authors/</loc>
+    <lastmod>2024-11-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//192.168.122.98:1313/categories/</loc>
+    <lastmod>2024-11-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//192.168.122.98:1313/tags/golang/</loc>
+    <lastmod>2024-11-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//192.168.122.98:1313/tags/html/</loc>
+    <lastmod>2024-11-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//192.168.122.98:1313/tags/hugo/</loc>
+    <lastmod>2024-11-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//192.168.122.98:1313/</loc>
+    <lastmod>2024-11-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//192.168.122.98:1313/authors/michael-haneman/</loc>
+    <lastmod>2024-11-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//192.168.122.98:1313/tags/scss/</loc>
+    <lastmod>2024-11-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//192.168.122.98:1313/articles/webdev/vm-for-webdev/</loc>
+    <lastmod>2024-11-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//192.168.122.98:1313/tags/</loc>
+    <lastmod>2024-11-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//192.168.122.98:1313/categories/web-dev/</loc>
+    <lastmod>2024-11-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//192.168.122.98:1313/tags/c&#43;&#43;/</loc>
+    <lastmod>2024-10-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//192.168.122.98:1313/categories/graphics/</loc>
+    <lastmod>2024-10-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//192.168.122.98:1313/articles/graphics/graphics__learnopengl-getting-started/</loc>
+    <lastmod>2024-10-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//192.168.122.98:1313/tags/java/</loc>
+    <lastmod>2024-10-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//192.168.122.98:1313/articles/test-automation/test-automation__regrets/</loc>
+    <lastmod>2024-10-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//192.168.122.98:1313/tags/playwright/</loc>
+    <lastmod>2024-10-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//192.168.122.98:1313/tags/selenium/</loc>
+    <lastmod>2024-10-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//192.168.122.98:1313/categories/test-automation/</loc>
+    <lastmod>2024-10-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//192.168.122.98:1313/articles/webdev/hugo__getting-started/</loc>
     <lastmod>2024-10-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/articles/</loc>
+    <loc>//192.168.122.98:1313/articles/godot/godot__subway-surfers-game/</loc>
     <lastmod>2024-10-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/authors/</loc>
+    <loc>//192.168.122.98:1313/categories/game-dev/</loc>
     <lastmod>2024-10-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/articles/godot/godot__subway-surfers-game/</loc>
+    <loc>//192.168.122.98:1313/tags/godot/</loc>
     <lastmod>2024-10-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/c&#43;&#43;/</loc>
+    <loc>//192.168.122.98:1313/tags/procedural-generation/</loc>
     <lastmod>2024-10-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2024-10-15T00:00:00+00:00</lastmod>
+    <loc>//192.168.122.98:1313/tags/manim/</loc>
+    <lastmod>2024-05-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/game-dev/</loc>
-    <lastmod>2024-10-15T00:00:00+00:00</lastmod>
+    <loc>//192.168.122.98:1313/tags/matplotlib/</loc>
+    <lastmod>2024-05-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/godot/</loc>
-    <lastmod>2024-10-15T00:00:00+00:00</lastmod>
+    <loc>//192.168.122.98:1313/tags/python/</loc>
+    <lastmod>2024-05-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/golang/</loc>
-    <lastmod>2024-10-15T00:00:00+00:00</lastmod>
+    <loc>//192.168.122.98:1313/categories/simulation/</loc>
+    <lastmod>2024-05-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/graphics/</loc>
-    <lastmod>2024-10-15T00:00:00+00:00</lastmod>
+    <loc>//192.168.122.98:1313/articles/simulation/trapped-knight/</loc>
+    <lastmod>2024-05-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/html/</loc>
-    <lastmod>2024-10-15T00:00:00+00:00</lastmod>
+    <loc>//192.168.122.98:1313/articles/simulation/trapped-knight__cont/</loc>
+    <lastmod>2024-04-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/hugo/</loc>
-    <lastmod>2024-10-15T00:00:00+00:00</lastmod>
+    <loc>//192.168.122.98:1313/about/</loc>
   </url><url>
-    <loc>http://localhost:1313/articles/webdev/hugo__client-solution/</loc>
-    <lastmod>2024-10-15T00:00:00+00:00</lastmod>
+    <loc>//192.168.122.98:1313/projects/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/java/</loc>
-    <lastmod>2024-10-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/articles/graphics/graphics__learnopengl-getting-started/</loc>
-    <lastmod>2024-10-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/articles/test-automation/test-automation__regrets/</loc>
-    <lastmod>2024-10-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2024-10-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/authors/michael-haneman/</loc>
-    <lastmod>2024-10-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/playwright/</loc>
-    <lastmod>2024-10-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/procedural-generation/</loc>
-    <lastmod>2024-10-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/scss/</loc>
-    <lastmod>2024-10-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/selenium/</loc>
-    <lastmod>2024-10-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/articles/webdev/vm-for-webdev/</loc>
-    <lastmod>2024-10-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2024-10-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/test-automation/</loc>
-    <lastmod>2024-10-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/web-dev/</loc>
-    <lastmod>2024-10-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/manim/</loc>
-    <lastmod>2024-05-05T15:58:27-07:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/matplotlib/</loc>
-    <lastmod>2024-05-05T15:58:27-07:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/python/</loc>
-    <lastmod>2024-05-05T15:58:27-07:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/simulation/</loc>
-    <lastmod>2024-05-05T15:58:27-07:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/articles/simulation/trapped-knight/</loc>
-    <lastmod>2024-05-05T15:58:27-07:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/about/</loc>
-  </url><url>
-    <loc>http://localhost:1313/projects/</loc>
-  </url><url>
-    <loc>http://localhost:1313/series/</loc>
+    <loc>//192.168.122.98:1313/series/</loc>
   </url>
 </urlset>

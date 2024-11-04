@@ -1,6 +1,6 @@
 +++ 
 draft = false
-date = 2024-10-15
+date = 2024-10-23
 title = "LearnOpenGL Setup with VKPKG for Linux"
 description = ""
 slug = ""

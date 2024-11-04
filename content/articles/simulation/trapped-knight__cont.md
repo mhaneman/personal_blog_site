@@ -1,6 +1,6 @@
 +++ 
-draft = true
-date = 2024-05-05T15:58:27-07:00
+draft = false
+date = 2024-04-23
 title = "The Trapped Knight Variations"
 description = ""
 slug = ""

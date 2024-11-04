@@ -1,6 +1,6 @@
 +++ 
 draft = false
-date = 2024-10-15
+date = 2024-10-18
 title = "Lessons Learned after 1.5 years as a Test Automation Engineer"
 description = ""
 slug = ""

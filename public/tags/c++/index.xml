@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>C&#43;&#43; on Michael Haneman</title>
-    <link>http://localhost:1313/tags/c&#43;&#43;/</link>
+    <link>//192.168.122.98:1313/tags/c&#43;&#43;/</link>
     <description>Recent content in C&#43;&#43; on Michael Haneman</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 15 Oct 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/c++/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 23 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//192.168.122.98:1313/tags/c++/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>LearnOpenGL Setup with VKPKG for Linux</title>
-      <link>http://localhost:1313/articles/graphics/graphics__learnopengl-getting-started/</link>
-      <pubDate>Tue, 15 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/articles/graphics/graphics__learnopengl-getting-started/</guid>
-      <description>&lt;h1 id=&#34;introduction&#34;&gt;&#xA;  Introduction&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#introduction&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;LearnOpenGL is a great resource for getting started with Graphics Programming.&#xA;A hard truth of c++ is how hard it is to link libraries.&#xA;VCPKG is a great solution to get all packages needed for LearnOpenGL working.&lt;/p&gt;&#xA;&lt;p&gt;Windows users will probably use VCPKG through Visual Studio. For Linux, its a little more hands on.&lt;/p&gt;&#xA;&lt;h1 id=&#34;install-vcpkg&#34;&gt;&#xA;  Install VCPKG&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#install-vcpkg&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://google.com&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Offical Site&lt;/a&gt;&lt;/p&gt;</description>
+      <link>//192.168.122.98:1313/articles/graphics/graphics__learnopengl-getting-started/</link>
+      <pubDate>Wed, 23 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>//192.168.122.98:1313/articles/graphics/graphics__learnopengl-getting-started/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;LearnOpenGL is a great resource for getting started with Graphics Programming.&#xA;A hard truth of c++ is how hard it is to link libraries.&#xA;VCPKG is a great solution to get all packages needed for LearnOpenGL working.&lt;/p&gt;&#xA;&lt;p&gt;Windows users will probably use VCPKG through Visual Studio. For Linux, its a little more hands on.&lt;/p&gt;&#xA;&lt;h1 id=&#34;install-vcpkg&#34;&gt;Install VCPKG&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://google.com&#34;&gt;Offical Site&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;method-1&#34;&gt;Method 1&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Create a folder in your root directory called &amp;ldquo;Apps&amp;rdquo;&lt;/li&gt;&#xA;&lt;li&gt;git clone VCPKG into &amp;ldquo;Apps&amp;rdquo;&lt;/li&gt;&#xA;&lt;li&gt;in .zshrc, create export for VCKPG PATH&lt;/li&gt;&#xA;&lt;li&gt;add VCKPG_PATH to your path&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;export VCPKG_ROOT=...&#xA;export PATH=...&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;method-2&#34;&gt;Method 2&lt;/h2&gt;&#xA;&lt;p&gt;Using this method, any software compiled from source will automatically be added to your PATH&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

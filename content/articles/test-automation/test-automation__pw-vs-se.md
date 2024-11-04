@@ -1,6 +1,6 @@
 +++ 
 draft = true
-date = 2024-10-15
+date = 2024-10-10
 title = "Benefits of Playwright over Selenium"
 description = ""
 slug = ""

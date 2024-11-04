@@ -1,6 +1,6 @@
 +++ 
 draft = false 
-date = 2024-10-15
+date = 2024-11-01
 title = "Setup a Minimal Web Development Virtual Machine in QEMU for Arch Linux Hosts"
 description = ""
 slug = ""
