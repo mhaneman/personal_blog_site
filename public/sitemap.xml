@@ -97,15 +97,13 @@
   </url><url>
     <loc>http://localhost:1313/about/</loc>
   </url><url>
-    <loc>http://localhost:1313/projects/</loc>
-  </url><url>
-    <loc>http://localhost:1313/projects/games/endless-runner/</loc>
-  </url><url>
     <loc>http://localhost:1313/projects/physics/atomic-clock/</loc>
   </url><url>
     <loc>http://localhost:1313/projects/physics/boltzmann/</loc>
   </url><url>
     <loc>http://localhost:1313/projects/games/digdug/</loc>
+  </url><url>
+    <loc>http://localhost:1313/projects/games/endless-runner/</loc>
   </url><url>
     <loc>http://localhost:1313/projects/webdev/fb-clone/</loc>
   </url><url>
@@ -120,6 +118,8 @@
     <loc>http://localhost:1313/projects/webdev/piano-roll/</loc>
   </url><url>
     <loc>http://localhost:1313/projects/games/portals/</loc>
+  </url><url>
+    <loc>http://localhost:1313/projects/</loc>
   </url><url>
     <loc>http://localhost:1313/series/</loc>
   </url><url>
