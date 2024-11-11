@@ -111,7 +111,7 @@
       <link>http://localhost:1313/projects/games/galactic-goalkeeper/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/games/galactic-goalkeeper/</guid>
-      <description>&lt;figure&gt;&lt;img src=&#34;../../gifs/galactic-goalkeeper.gif&#34; width=&#34;512&#34; height=&#34;512&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;h4&gt;Galactic Goalkeeper&lt;/h4&gt;&#xA;    &lt;/figcaption&gt;&#xA;&lt;/figure&gt;</description>
+      <description>&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/gifs/galactic-goalkeeper.gif&#34; width=&#34;512&#34; height=&#34;512&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;h4&gt;Galactic Goalkeeper&lt;/h4&gt;&#xA;    &lt;/figcaption&gt;&#xA;&lt;/figure&gt;</description>
     </item>
     <item>
       <title>Gamma Ray Simulation</title>
@@ -139,14 +139,14 @@
       <link>http://localhost:1313/projects/games/portals/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/games/portals/</guid>
-      <description>&lt;figure&gt;&lt;img src=&#34;../../gifs/portals.gif&#34; width=&#34;512&#34; height=&#34;512&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;h4&gt;Galactic Goalkeeper&lt;/h4&gt;&#xA;    &lt;/figcaption&gt;&#xA;&lt;/figure&gt;</description>
+      <description>&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/gifs/portals.gif&#34; width=&#34;512&#34; height=&#34;512&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;h4&gt;Galactic Goalkeeper&lt;/h4&gt;&#xA;    &lt;/figcaption&gt;&#xA;&lt;/figure&gt;</description>
     </item>
     <item>
       <title>Spinners</title>
       <link>http://localhost:1313/projects/visualizers/spinners/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/visualizers/spinners/</guid>
-      <description>&lt;figure&gt;&lt;img src=&#34;../../gifs/spinners.gif&#34; width=&#34;512&#34; height=&#34;512&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;h4&gt;Spinners&lt;/h4&gt;&#xA;    &lt;/figcaption&gt;&#xA;&lt;/figure&gt;</description>
+      <description>&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/gifs/spinners.gif&#34; width=&#34;512&#34; height=&#34;512&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;h4&gt;Spinners&lt;/h4&gt;&#xA;    &lt;/figcaption&gt;&#xA;&lt;/figure&gt;</description>
     </item>
   </channel>
 </rss>
