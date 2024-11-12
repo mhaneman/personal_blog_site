@@ -1,8 +1,8 @@
 +++ 
 draft = false
 date = 2024-10-15
-title = "Building a Subway Surfers Clone in Godot pt.1"
-description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+title = "Subway Surfers Clone"
+description = "Part 1. Creating a 'Minimal Viable Product' in Godot for an infinite runner"
 slug = ""
 authors = ["Michael Haneman"]
 tags = ["Godot", "Procedural Generation"]

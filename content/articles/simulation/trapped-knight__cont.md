@@ -2,7 +2,7 @@
 draft = false
 date = 2024-04-23
 title = "The Trapped Knight Variations"
-description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+description = "Chaos from simple rules."
 slug = ""
 authors = ["Michael Haneman"]
 tags = ["python", "matplotlib"]

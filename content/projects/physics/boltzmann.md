@@ -1,6 +1,6 @@
 ---
 title: Boltzmann Simulation
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+description: "The Boltzmann distribution describes a probability that a system will be in a certain state as a function of that state's energy and the temperature of the system.Boltzmann dUtilizing. Simulation was created using CUDA and python"
 video: "/videos/boltzmann-sim.mp4"
 ---
 

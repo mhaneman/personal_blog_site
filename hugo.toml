@@ -24,7 +24,7 @@ pageRef  = "articles/"
 [[menus.main]]
 name = "Experience"
 weight = 20
-pageRef = "about/"
+pageRef = "experience/"
 
 [[menus.main]]
 name = "Projects"

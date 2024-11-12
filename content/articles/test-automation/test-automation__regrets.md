@@ -2,7 +2,7 @@
 draft = false
 date = 2024-10-18
 title = "Lessons Learned after 1.5 years as a Test Automation Engineer"
-description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+description = "Yeah. Mistakes where made. Here are some thoughts on what could have been done differently or better."
 slug = ""
 authors = ["Michael Haneman"]
 tags = ["Selenium", "Playwright", "Java"]
@@ -10,10 +10,6 @@ categories = ["Web Dev", "Test Automation"]
 externalLink = ""
 series = []
 +++
-
-# Introduction
-
-Yeah. Mistakes where made. Here are some thoughts on what I believe I did wrong and changes made to correct them.
 
 # Frontend Browser E2E Testing
 
