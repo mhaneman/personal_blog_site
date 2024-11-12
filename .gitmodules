@@ -1,3 +1,7 @@
 [submodule "themes/hugo-coder-theme"]
 	path = themes/hugo-coder-theme
 	url = git@github.com:mhaneman/hugo-coder-theme.git
+
+[submodule "themes/showoff-theme"]
+	path = themes/showoff-theme
+	url = git@github.com:mhaneman/showoff-theme.git

@@ -1,17 +1,6 @@
 baseurl = "http://www.mthaneman.xyz"
 title = "Michael Haneman"
-theme = "hugo-coder-theme"
-languagecode = "en"
-defaultcontentlanguage = "en"
-
-pagination.pagerSize = 20
-
-[services]
-[services.disqus]
-disqusShortname = "yourdiscussshortname"
-
-[markup.highlight]
-style = "github-dark"
+theme = "showoff-theme"
 
 [params]
   author = "Michael Haneman"
@@ -19,24 +8,28 @@ style = "github-dark"
   description = "Michael Haneman's personal website"
   keywords = "blog,developer,personal"
   avatarurl = "images/avatar.jpg"
-  #gravatar = "john.doe@example.com"
-
-  faviconSVG = "/img/favicon.svg"
-  favicon_32 = "/img/favicon-32x32.png"
-  favicon_16 = "/img/favicon-16x16.png"
-
-  # since = 2019
-
-  enableTwemoji = true
-
-  colorScheme = "auto"
-  hidecolorschemetoggle = false
 
 [taxonomies]
   category = "categories"
   series = "series"
   tag = "tags"
   author = "authors"
+
+# Menu links
+[[menus.main]]
+name = "Articles"
+weight = 10
+pageRef  = "articles/"
+
+[[menus.main]]
+name = "Experience"
+weight = 20
+pageRef = "about/"
+
+[[menus.main]]
+name = "Projects"
+weight = 30
+pageRef = "projects/"
 
 # Social links
 [[params.social]]
@@ -56,20 +49,4 @@ style = "github-dark"
   icon = "fa-brands fa-linkedin fa-2x"
   weight = 2
   url = "https://www.linkedin.com/in/michael-haneman-1062461a4/" 
-
-# Menu links
-[[menu.main]]
-  name = "Articles"
-  weight = 1
-  url  = "articles/"
-
-[[menu.main]]
-  name = "Experience"
-  weight = 2
-  url = "about/"
-
-[[menu.main]]
-name = "Projects"
-weight = 3
-url = "projects/"
 
