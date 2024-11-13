@@ -1,6 +1,6 @@
 ---
 title: Portals
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+description: "A headless unicycle rider trying to get to the next portal. What's not to love?"
 video: "/videos/portals.mp4"
 ---
 

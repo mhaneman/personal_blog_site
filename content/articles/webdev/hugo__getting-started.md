@@ -2,7 +2,7 @@
 draft = false 
 date = 2024-10-15
 title = "A Minimalist Approach to Building Websites with Hugo"
-description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+description = "There are many amazing hugo themes. But what if I just want text on a website without much configuration?"
 slug = ""
 authors = ["Michael Haneman"]
 tags = ["Hugo", "Golang", "HTML", "SCSS"]

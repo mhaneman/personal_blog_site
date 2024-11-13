@@ -1,6 +1,6 @@
 ---
 title: Gamma Ray Simulation
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+description: "A gamma ray is a penetrating form of electromagnetic radiation arising from the radioactive decay of atomic nuclei. It consists of the shortest wavelength electromagnetic waves, typically shorter than those of X-rays."
 ---
 
 https://github.com/mhaneman/gamma_ray_sim
