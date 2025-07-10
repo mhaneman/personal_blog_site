@@ -1,0 +1,59 @@
+{{ define "main" }}
+  <h1>{{ .Title }}</h1>
+
+
+  {{/*  {{range ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
+   <a href="{{.Permalink}}">{{.Title}}</a></li>
+  {{end}}  */}}
+
+  {{ .Content }}
+  {{ range .Pages }}
+    <article>
+      {{ with .Params.image }}
+        <div class="img__container">
+          <img src="{{ . }}">
+        </div>
+      {{ end }}
+
+      {{ with .Params.video }}
+        <div class="img__container">
+          <video controls>
+            <source src="{{ . }}" type="video/mp4">
+          </video>
+        </div>
+      {{ end }}
+
+      <h2>{{ .LinkTitle }}</h2>
+
+      {{/*  {{ with .GetTerms "tags" }}
+        <ul>
+          <li>Tags: </li>
+          {{ range . }}
+            <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+          {{ end }}
+        </ul>
+      {{ end }}
+
+      {{ with .GetTerms "categories" }}
+        <ul>
+          <li>Categories: </li>
+          {{ range . }}
+            <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+          {{ end }}
+        </ul>
+      {{ end }}  */}}
+
+      {{ with .Date }}
+        {{ $dateMachine := . | time.Format "2006-01-02T15:04:05-07:00" }}
+        {{ $dateHuman := . | time.Format ":date_long" }}
+        <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+      {{ end }}
+
+      {{ with .Description }}
+        <h4>{{ . }}</h4>
+      {{ end }}
+
+      <h4><a class="button-link" href="{{ .RelPermalink }}">Continue Reading</a></h4>
+    </article>
+  {{ end }}
+{{ end }}

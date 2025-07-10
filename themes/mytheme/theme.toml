@@ -1,0 +1,14 @@
+name = 'mytheme'
+license = 'MIT'
+licenselink = 'https://github.com/owner/repo/LICENSE'
+description = 'Just a simple theme'
+
+
+# Taxonomy terms
+tags = ['blog', 'company']
+features = ['some', 'awesome', 'features']
+
+# If the theme has a single author
+[author]
+  name = 'Michael Haneman'
+  homepage = 'https://mthaneman.xyz'

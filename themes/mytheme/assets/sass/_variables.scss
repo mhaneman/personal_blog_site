@@ -1,0 +1,17 @@
+// importing core styling file
+@import "./fontawesome/fontawesome.scss";
+
+//  importing Font Awesome styles
+@import "./fontawesome/solid.scss";
+@import "./fontawesome/brands.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+$fa-font-path: "../webfonts" !default;
+
+$breakpoint-tablet: 768px;
+
+$text-color: white;
+$accent-color: rgb(123, 91, 171);
+$bg: #222;
+$bg-accent: #292929;

@@ -1,0 +1,12 @@
+{{ define "main" }}
+  {{ .Content }}
+    <div class="myself">
+      <div class="myself__left">
+        {{ partialCached "home/avatar.html" . }}
+        {{ partialCached "home/social.html" . }}
+      </div>
+      <div class="myself__right">
+        {{ partialCached "home/author.html" . }}
+      </div>
+    </div>
+{{ end }}
