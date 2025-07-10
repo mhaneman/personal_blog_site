@@ -1,6 +1,6 @@
 baseurl = "http://www.mthaneman.xyz"
 title = "Michael Haneman"
-theme = "showoff-theme"
+theme = "mytheme"
 
 [params]
   author = "Michael Haneman"
