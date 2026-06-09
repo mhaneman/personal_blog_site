@@ -141,7 +141,7 @@ header {
   align-items: center;
   gap: 1rem;
   margin: 1rem auto 2.5rem;
-  max-width: calc(#{$content-max-width} + 2.5rem);
+  max-width: $shell-width;
   padding: 1rem 1.25rem;
   border-radius: $radius-md;
 
@@ -321,9 +321,21 @@ footer {
 
 .list-panel {
   @include frosted-panel;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: 0;
   border-radius: $radius-lg;
   padding: clamp(1.25rem, 3vw, 2rem);
   margin-top: 0.5rem;
+
+  @media (min-width: $content-max-width) {
+    max-width: $shell-width;
+    width: calc(100% + 5rem);
+    margin-left: -2.5rem;
+    margin-right: -2.5rem;
+  }
 
   .page-title,
   .content,
@@ -716,10 +728,21 @@ a:not(.button-link):hover {
   }
 }
 
+@media (max-width: calc(#{$content-max-width} - 1px)) {
+  header {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    max-width: none;
+    width: auto;
+  }
+}
+
 @media (max-width: $breakpoint-mobile) {
   header {
     top: 0.75rem;
     margin-top: 0.75rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;

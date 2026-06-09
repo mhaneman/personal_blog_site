@@ -36,6 +36,7 @@ $gradient-glow: radial-gradient(circle at 20% 20%, rgba(139, 92, 246, 0.14), tra
 
 // Layout
 $content-max-width: 920px;
+$shell-width: calc(#{$content-max-width} + 2.5rem);
 $radius-sm: 8px;
 $radius-md: 14px;
 $radius-lg: 22px;
