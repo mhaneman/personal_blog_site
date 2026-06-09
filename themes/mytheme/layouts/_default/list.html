@@ -1,16 +1,13 @@
 {{ define "main" }}
-  <h1 class="page-title">{{ .Title }}</h1>
+  <section class="list-panel">
+    <h1 class="page-title">{{ .Title }}</h1>
 
+    <div class="content">
+      {{ .Content }}
+    </div>
 
-  {{/*  {{range ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
-   <a href="{{.Permalink}}">{{.Title}}</a></li>
-  {{end}}  */}}
-
-  <div class="content">
-  {{ .Content }}
-  </div>
-  {{ range .Pages }}
-    <article>
+    {{ range .Pages }}
+      <article>
       {{ with .Params.image }}
         <div class="img__container">
           <img src="{{ . }}">
@@ -56,6 +53,7 @@
       {{ end }}
 
       <h4><a class="button-link" href="{{ .RelPermalink }}">Continue Reading</a></h4>
-    </article>
-  {{ end }}
+      </article>
+    {{ end }}
+  </section>
 {{ end }}
