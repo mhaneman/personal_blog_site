@@ -4,3 +4,9 @@
 {{ else }}
 <h2>{{ .Site.Params.info | markdownify }} </h2>
 {{ end }}
+{{ with .Site.Params.education }}
+<p class="myself__education">{{ . | markdownify }}</p>
+{{ end }}
+{{ with .Site.Params.summary }}
+<p class="myself__summary">{{ . | markdownify }}</p>
+{{ end }}

@@ -316,6 +316,21 @@ footer {
       font-weight: 500;
       color: $text-muted;
     }
+
+    .myself__education {
+      margin: 0.35rem 0 0;
+      font-size: clamp(0.9rem, 1.8vw, 1rem);
+      font-weight: 400;
+      color: $text-muted;
+    }
+
+    .myself__summary {
+      margin: 0.85rem 0 0;
+      max-width: 36rem;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: rgba(238, 241, 248, 0.82);
+    }
   }
 }
 

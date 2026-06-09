@@ -4,7 +4,9 @@ theme = "mytheme"
 
 [params]
   author = "Michael Haneman"
-  info = "Automation Test Engineer @ Boeing / Tapestry Solutions"
+  info = "Automation Test Engineer at Boeing @ Tapestry Solutions"
+  education = "California Polytechnic State University · BS Physics"
+  summary = "I build test automation with TypeScript and Playwright, tinker with AI tooling on the side, and occasionally ship a fullstack project. This site is where I keep projects, notes, and whatever I'm learning along the way."
   description = "Michael Haneman's personal website"
   keywords = "blog,developer,personal"
   showAvatar = false
