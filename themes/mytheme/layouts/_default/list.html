@@ -1,12 +1,14 @@
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
+  <h1 class="page-title">{{ .Title }}</h1>
 
 
   {{/*  {{range ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
    <a href="{{.Permalink}}">{{.Title}}</a></li>
   {{end}}  */}}
 
+  <div class="content">
   {{ .Content }}
+  </div>
   {{ range .Pages }}
     <article>
       {{ with .Params.image }}
