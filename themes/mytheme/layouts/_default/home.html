@@ -1,8 +1,8 @@
 {{ define "main" }}
   {{ .Content }}
-    <div class="myself">
+    <div class="myself{{ if not (default true .Site.Params.showAvatar) }} myself--no-avatar{{ end }}">
       <div class="myself__left">
-        {{ partialCached "home/avatar.html" . }}
+        {{ partial "home/avatar.html" . }}
         {{ partialCached "home/social.html" . }}
       </div>
       <div class="myself__right">

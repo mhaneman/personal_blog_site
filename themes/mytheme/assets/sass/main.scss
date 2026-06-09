@@ -274,6 +274,16 @@ footer {
     }
   }
 
+  &.myself--no-avatar {
+    .socials {
+      margin: 0;
+    }
+
+    .myself__left {
+      justify-content: center;
+    }
+  }
+
   .myself__left {
     display: flex;
     flex-direction: column;
@@ -606,17 +616,36 @@ a:not(.button-link):hover {
   header {
     top: 0.75rem;
     margin-top: 0.75rem;
-    flex-direction: column;
-    align-items: stretch;
-    padding: 0.85rem 1rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.65rem 0.75rem;
+    gap: 0.5rem;
+
+    #header__left {
+      flex-shrink: 0;
+    }
+
+    #header__right {
+      flex: 1;
+      min-width: 0;
+    }
 
     nav ul {
-      justify-content: center;
+      justify-content: flex-end;
+      flex-wrap: nowrap;
+      gap: 0.35rem;
+    }
+
+    #header__left .button-link {
+      min-width: 2.25rem;
+      padding: 0.45rem 0.55rem;
     }
   }
 
   .button-link {
-    font-size: 0.85rem;
-    padding: 0.5rem 0.9rem;
+    font-size: 0.78rem;
+    padding: 0.45rem 0.65rem;
+    min-width: auto;
   }
 }
