@@ -339,31 +339,14 @@ footer {
   article {
     background: transparent;
     border: none;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.16);
     border-radius: 0;
     margin-top: 0;
-    padding: 1.35rem 0 1.35rem 0.75rem;
+    padding: 1.35rem 0;
     box-shadow: none;
-    position: relative;
-    overflow: hidden;
 
     &::before {
       display: none;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 1.25rem;
-      bottom: 1.25rem;
-      width: 3px;
-      border-radius: $radius-pill;
-      background: $gradient-brand;
-      opacity: 0;
-      transform: scaleY(0.4);
-      transform-origin: center;
-      transition: opacity $transition-fast, transform $transition-base;
     }
 
     &:first-of-type {
@@ -373,30 +356,18 @@ footer {
     &:last-child {
       border-bottom: none;
       padding-bottom: 0;
-
-      &::after {
-        bottom: 0;
-      }
     }
 
     &:hover {
-      background: transparent;
+      transform: none;
       box-shadow: none;
-
-      &::after {
-        opacity: 1;
-        transform: scaleY(1);
-      }
-
-      h2 {
-        color: #c4b5fd;
-      }
+      background: transparent;
+      border-bottom-color: rgba(255, 255, 255, 0.16);
     }
 
     h2 {
       margin: 0.75rem 0 0.35rem;
       color: $text-color;
-      transition: color $transition-fast;
     }
 
     time {
@@ -418,6 +389,12 @@ footer {
 
     .button-link {
       max-width: none;
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.04);
+        border-color: rgba(255, 255, 255, 0.1);
+        color: $text-color;
+      }
     }
 
     .tag-list {
@@ -440,12 +417,11 @@ footer {
       background: rgba(139, 92, 246, 0.1);
       border: 1px solid rgba(139, 92, 246, 0.22);
       border-radius: $radius-pill;
-      transition: background $transition-fast, border-color $transition-fast, color $transition-fast;
 
       &:hover {
-        color: #e9d5ff;
-        background: rgba(139, 92, 246, 0.2);
-        border-color: rgba(139, 92, 246, 0.4);
+        color: $text-muted;
+        background: rgba(139, 92, 246, 0.1);
+        border-color: rgba(139, 92, 246, 0.22);
       }
     }
   }
