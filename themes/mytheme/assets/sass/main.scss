@@ -23,8 +23,8 @@
     position: absolute;
     inset: 0;
     border-radius: inherit;
-    backdrop-filter: blur(20px) saturate(1.4);
-    -webkit-backdrop-filter: blur(20px) saturate(1.4);
+    backdrop-filter: blur(20px) saturate(1.2);
+    -webkit-backdrop-filter: blur(20px) saturate(1.2);
     pointer-events: none;
     z-index: -1;
   }
@@ -63,8 +63,8 @@ body {
     content: "";
     position: fixed;
     inset: 0;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.018) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.018) 1px, transparent 1px);
     background-size: 48px 48px;
     mask-image: radial-gradient(circle at center, black 30%, transparent 85%);
     pointer-events: none;
@@ -102,7 +102,7 @@ h6 {
 
 h1 {
   font-size: clamp(2rem, 4vw, 2.75rem);
-  font-weight: 800;
+  font-weight: 700;
 }
 
 h2 {
@@ -206,7 +206,6 @@ footer {
   &:hover {
     border-color: $surface-border-hover;
     box-shadow: $shadow-glow-hover;
-    transform: translateY(-2px);
   }
 
   @media (max-width: $breakpoint-tablet) {
@@ -271,10 +270,8 @@ footer {
         box-shadow $transition-fast;
 
       &:hover {
-        transform: translateY(-3px) scale(1.05);
-        background: rgba(139, 92, 246, 0.18);
-        border-color: rgba(139, 92, 246, 0.45);
-        box-shadow: 0 8px 24px rgba(139, 92, 246, 0.25);
+        background: rgba(139, 92, 246, 0.14);
+        border-color: rgba(139, 92, 246, 0.35);
       }
     }
   }
@@ -345,12 +342,28 @@ footer {
     border-bottom: 1px solid rgba(255, 255, 255, 0.07);
     border-radius: 0;
     margin-top: 0;
-    padding: 1.35rem 0;
+    padding: 1.35rem 0 1.35rem 0.75rem;
     box-shadow: none;
-    transition: background $transition-fast;
+    position: relative;
+    overflow: hidden;
 
     &::before {
       display: none;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 1.25rem;
+      bottom: 1.25rem;
+      width: 3px;
+      border-radius: $radius-pill;
+      background: $gradient-brand;
+      opacity: 0;
+      transform: scaleY(0.4);
+      transform-origin: center;
+      transition: opacity $transition-fast, transform $transition-base;
     }
 
     &:first-of-type {
@@ -360,13 +373,44 @@ footer {
     &:last-child {
       border-bottom: none;
       padding-bottom: 0;
+
+      &::after {
+        bottom: 0;
+      }
     }
 
     &:hover {
-      transform: none;
-      background: rgba(255, 255, 255, 0.03);
+      background: transparent;
       box-shadow: none;
-      border-color: rgba(255, 255, 255, 0.07);
+
+      &::after {
+        opacity: 1;
+        transform: scaleY(1);
+      }
+
+      h2 {
+        color: #c4b5fd;
+      }
+    }
+
+    h2 {
+      margin: 0.75rem 0 0.35rem;
+      color: $text-color;
+      transition: color $transition-fast;
+    }
+
+    time {
+      display: inline-block;
+      margin-bottom: 0.35rem;
+      font-size: 0.85rem;
+      color: $accent-secondary;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+    }
+
+    .button-link {
+      margin-top: 0.75rem;
+      max-width: none;
     }
   }
 }
@@ -397,7 +441,7 @@ article {
   }
 
   &:hover {
-    transform: translateY(-4px);
+    transform: translateY(-2px);
     border-color: $surface-border-hover;
     box-shadow: $shadow-glow-hover;
 
@@ -406,25 +450,19 @@ article {
     }
   }
 
-  h2 {
-    margin: 0.75rem 0 0.35rem;
-    background: linear-gradient(120deg, #fff 0%, #c4b5fd 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    h2 {
+      margin: 0.75rem 0 0.35rem;
+      color: $text-color;
 
-    a {
-      background: inherit;
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-      transition: opacity $transition-fast;
+      a {
+        color: inherit;
+        transition: color $transition-fast;
 
-      &:hover {
-        opacity: 0.85;
+        &:hover {
+          color: #c4b5fd;
+        }
       }
     }
-  }
 
   time {
     display: inline-block;
