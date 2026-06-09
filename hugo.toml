@@ -4,7 +4,7 @@ theme = "mytheme"
 
 [params]
   author = "Michael Haneman"
-  info = "Test Automation Engineer at Boeing"
+  info = "Automation Test Engineer @ Boeing / Tapestry Solutions"
   description = "Michael Haneman's personal website"
   keywords = "blog,developer,personal"
   showAvatar = false

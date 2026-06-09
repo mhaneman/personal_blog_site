@@ -2,7 +2,7 @@
 title: Facebook Clone
 description: "Made with React and Firebase"
 image: "/images/fb-clone.png"
-tags: [""]
+tags: ["webdev"]
 categories: ["Web Development"]
 ---
 

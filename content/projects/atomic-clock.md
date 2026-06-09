@@ -1,7 +1,7 @@
 ---
 title: Atomic Clock
 description: "Atomic clocks combine a quartz crystal oscillator with an ensemble of atoms to achieve greater stability. "
-tags: [""]
+tags: ["physics"]
 categories: ["Physics"]
 ---
 

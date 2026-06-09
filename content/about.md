@@ -4,125 +4,40 @@ title: About
 
 # Experience
 
-## Automation Test Engineer - Boeing
+## Automation Test Engineer — Boeing @ Tapestry Solutions
 
-### Tasks
+*July 2023 – Present · San Luis Obispo, CA*
 
-- Develop SOAP and RESTful API web service automation scripts
-- Creation of automation tools in Java and Selenium for the creation of automation scripts
-- Develop UI/functional automation scripts in JavaScript
-- Fix Frontend and Backend Bugs found using BDD Testing
+I work on test automation at Boeing through Tapestry Solutions. When I joined, a lot of the QA tooling was dated, so I spent a good chunk of my time building a **TypeScript/Playwright** framework for API and UI end-to-end tests. Lately I've also been exploring AI agents that can draft Playwright test cases using context pulled from MCP servers.
 
-### Technologies
+I got pulled onto an internal AI improvement effort where I built RAG-based MCP servers in **Python** with **ChromaDB** and internal LLMs, trained on Jira test cases and team documentation. That setup helps with **Playwright MCP** exploratory testing and powers a documentation Q&A bot for newer team members.
 
-- Azure DevOps
-- JIRA
-- Selenium / Selenide
-- Java, Intellij
-- Javascript and Typescript
-- HTML/CSS
-- TestComplete
-- SoapUI
-- SQL (Postgres)
+Day-to-day workflows in Jira were slowing people down, so I built a Chrome extension in **TypeScript, Webpack, and React** that the QA team actually uses — about 10–15 people rely on it to turn Jira markdown into test code and to draft bug reports with AI-assisted duplicate detection.
 
-## Frontend Developer - Think Tank QA
+Before cloud deployment and hardening work kicked off, I converted JMeter E2E scripts into load and soak tests, automated high-priority manual cases with TestComplete, and wired the suites into **Jenkins** CI/CD pipelines.
 
-### Tasks
+## UI Designer & Frontend Developer — Think Tank QA
 
-- Design and implement website mock ups made in Figma
-- Maintain and update Wordpress site
+*Jan. 2023 – July 2023 · Remote*
 
-### Technologies
+Short contract role working with business stakeholders to turn requirements into **Figma** mockups for website designs.
 
-- Wordpress
-- Figma
+## Lab Technician — California Polytechnic State University
 
-## Frontend Developer Internship - Digital Twin
+*Sept. 2022 – March 2023 · San Luis Obispo, CA*
 
-### Tasks
+Worked in a physics lab on an atomic clock project. I migrated a legacy **LabVIEW** codebase to **Python**, which sped things up and made the measurement data more reliable. I also wrote reusable Python modules to talk to lab hardware and automate data collection.
 
-- Create interactive dashboard using react
-- Display collected room info using backend data
+# Technical Skills
 
-### Technologies
+**Languages:** TypeScript, Python, Go, HTML, CSS, SQL, Java/C#
 
-- React
-- Docker
-
-## Lab Technician - Cal Poly
-
-### Tasks
-
-- Implement software to control and analyze data for atomic clock
-- Design GUI for Serial Communications in python
-- Refactor LabView into python scripts
-
-### Technologies
-
-- python
-- Ubuntu Linux
-- LabView
+**Frameworks & Tools:** Playwright, Selenium, React, JMeter, Jenkins, Git, Jira, Azure, Linux
 
 # Education
 
 ## California Polytechnic State University
 
-- Bachelor's of Science in Physics
+*San Luis Obispo, CA*
 
-## Saint Luis University
-
-- Boeing Education Reimbursement
-
-# Programming Languages
-
-- C# / Java
-- C
-- C++
-- Typescript / Javascript
-- HTML and CSS
-- Python
-
-# References
-
-Zackary NJ peterson
-
-- Professor, Computer Science, California Polytechnic State University
-- Email: znjpeterson@gmail.com
-- Website: https://www.znjp.com/
-
-Thomas Bensky
-
-- Professor, Physics, California Polytechnic State University
-- Email: tbensky@calpoly.edu
-- Website: https://tbensky.github.io/
-
-# Courses
-
-## Computer Science
-
-- Data Structures
-- Object Oriented Programming
-- Computer Organization
-- Systems Programming
-- Cryptography
-- Introduction to Computer Orientation
-- Introduction to Real-Time Embedded Systems Programming
-
-## Physics
-
-- Modern Physics II
-- Physics on the Computer
-- Advanced Topics in Solid State Physics
-- Quantum Physics I
-- Optics
-
-## Math
-
-- Partial Differential Equations
-- Linear Analysis II
-- Vector Analysis
-
-## Electrical Engineering
-
-- Basic Electronics Manufacturing
-- Electronics and Instrumentation
+- Bachelor of Science in Physics · Sept. 2018 – July 2023

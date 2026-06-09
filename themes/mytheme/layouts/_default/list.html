@@ -52,7 +52,10 @@
         <h4>{{ . }}</h4>
       {{ end }}
 
-      <h4><a class="button-link" href="{{ .RelPermalink }}">Continue Reading</a></h4>
+      <div class="article__footer">
+        <a class="button-link" href="{{ .RelPermalink }}">Continue Reading</a>
+        {{ partial "tag-list.html" . }}
+      </div>
       </article>
     {{ end }}
   </section>
